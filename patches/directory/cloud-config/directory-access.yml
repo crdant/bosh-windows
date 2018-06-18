@@ -1,0 +1,12 @@
+---
+- type: replace
+  path: /networks/name=default/subnets/az=z1/cloud_properties/security_groups/-
+  value: ((directory_security_group))
+
+- type: replace
+  path: /networks/name=default/subnets/az=z2/cloud_properties/security_groups/-
+  value: ((directory_security_group))
+
+- type: replace
+  path: /networks/name=default/subnets/az=z3/cloud_properties/security_groups/-
+  value: ((directory_security_group))

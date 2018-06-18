@@ -1,0 +1,35 @@
+---
+releases:
+  - name: windows-utilities
+    version: 0.10.0+dev.1
+
+addons:
+- name: set-admin-password
+  jobs:
+  - name: set_password
+    release: windows-utilities
+    properties:
+      set_password:
+        password: "uruguay!b4s3-anteri0r"
+  include:
+    stemcell:
+    - os: windows2012R2
+
+- name: enable-ssh
+  jobs:
+  - name: enable_ssh
+    release: windows-utilities
+  include:
+    stemcell:
+    - os: windows2012R2
+
+- name: enable-rdp
+  jobs:
+  - name: enable_rdp
+    properties:
+      enable_rdp:
+        enabled: true
+    release: windows-utilities
+  include:
+    stemcell:
+    - os: windows2012R2

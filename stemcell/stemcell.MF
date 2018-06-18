@@ -1,0 +1,24 @@
+---
+name: bosh-aws-xen-hvm-windows2012R2-stemcell-go_agent
+version: '1200.19'
+sha1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+operating_system: windows2012R2
+cloud_properties:
+  infrastructure: aws
+  ami:
+    us-east-1: ami-3477fb4b
+    us-east-2: ami-d0b28fb5
+    us-west-1: ami-340e1754
+    us-west-2: ami-960e7cee
+    ca-central-1: ami-6e4aca0a
+    ap-south-1: ami-f086a49f
+    ap-northeast-2: ami-82b810ec
+    ap-southeast-1: ami-58b88e24
+    ap-southeast-2: ami-c578aea7
+    ap-northeast-1: ami-74f2050b
+    eu-central-1: ami-f4351a1f
+    eu-west-1: ami-8b212cf2
+    eu-west-2: ami-f2fc1195
+    sa-east-1: ami-979ec2fb
+stemcell_formats:
+- aws-light
