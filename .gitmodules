@@ -1,0 +1,6 @@
+[submodule "releases/windows-utilities-release"]
+	path = releases/windows-utilities-release
+	url = https://github.com/cloudfoundry-incubator/windows-utilities-release
+[submodule "releases/sample-windows-bosh-release"]
+	path = releases/sample-windows-bosh-release
+	url = https://github.com/cloudfoundry-incubator/sample-windows-bosh-release
